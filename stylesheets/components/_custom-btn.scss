@@ -1,0 +1,13 @@
+.btn-special {
+  &:hover {
+    box-shadow: 2px 5px 3px black;
+    background-color: $warning;
+    transform: translateY(-5px);
+  }
+}
+// 浮起
+.btn-h {
+  &:hover {
+    transform: translateY(-8px);
+  }
+}

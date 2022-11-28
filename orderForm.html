@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/04i.ico" type="image/x-icon">
+  <title>波吉拯救毛孩行動</title>
+
+  <link rel="stylesheet" href="./stylesheets/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-4 fixed-top">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo.png" alt="狗頭描繪首頁標題撿到寶">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item pe-5">
+            <a class="nav-link btn-h active" aria-current="page" href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link btn-h" href="./service.html">服務介紹</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link btn-h" href="./designer.html">設計作品</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link btn-h mb-3 mb-lg-0" href="./adoptionArea.html">領養專區</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="btn btn-warning rounded-pill px-5 btn-special" href="./orderForm.html">毛孩似顏繪</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="border-bottom border-warning border-3 py-4" style="background-image:url(./images/lightpaperfibers@2x.png) ;">
+    <!-- top img -->
+    <div class="d-flex justify-content-center">
+      <img class="img-fluid d-none d-md-block" src="./images/banner.png" alt="四隻貓，毛孩似顏繪" style="padding-top: 90px;">
+      <img class="img-fluid d-md-none px-3" src="./images/banner_service-sm@2x.png" alt="四隻貓，毛孩似顏繪" style="padding-top: 80px;">
+    </div>
+    
+    <div class="row justify-content-center py-4 px-3">
+      <div class="col-lg-7">
+        <section class="shadow-sm border-top border-warning rounded border-5 bg-white">
+          <h1 class="pt-5 text-center fw-bold fs-4">填寫訂購資訊</h1>
+          <!-- 填寫資料 -->
+          <form class="needs-validation p-lg-4 p-3" novalidate>
+              <div class="row g-2">
+                <div class="col-lg-6">
+                  <label for="validationFirstName" class="form-label">名字</label>
+                  <input type="text" class="form-control" id="validationFirstName" placeholder="美玉" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    請輸入 名
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="validationLastName" class="form-label">姓氏</label>
+                  <input type="text" class="form-control" id="validationLastName" placeholder="王" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    請輸入 姓
+                  </div>
+                </div>
+                <div class="mb-3 col-12">
+                  <label for="PhoneNumber" class="form-label">手機號碼</label>
+                  <input type="tel" class="form-control" id="PhoneNumber" placeholder="0989456123" required minlength="10" maxlength="10">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    請輸入 電話號碼
+                  </div>
+                </div>
+                <div class="mb-3 col-12">
+                  <label for="Email" class="form-label">電子郵件</label>
+                  <input type="email" class="form-control" id="Email" placeholder="name@example.com" required="">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    請輸入 Email
+                  </div>
+                </div>
+                <div class="mb-3 col-12 row g-0">
+                  <label for="address" class="form-label">收件地址</label>
+                  <div class="col-12 col-md-6 pe-md-4">
+                    <select class="form-select col" id="address" required>
+                      <option selected value="請選擇城市" disabled>請選擇城市</option>
+                      <option value="台北市">台北市</option>
+                      <option value="新北市">新北市</option>
+                      <option value="高雄市">高雄市</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6 pt-2 pt-md-0">
+                    <select class="form-select col" id="address" placeholder="請選擇區域" required>
+                      <option selected value="請選擇區域" disabled>請選擇區域</option>
+                      <option value="中山區">中山區</option>
+                      <option value="安樂區">安樂區</option>
+                      <option value="信義區">信義區</option>
+                    </select>
+                  </div>
+                  <div class="col-12 pt-2">
+                  <input type="text" placeholder="輸入詳細地址" class="form-control" id="address" required>
+                  </div>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    請輸入 住址
+                  </div>
+                </div>
+                <div class="mb-3 col-12">
+                  <label for="designerStyle" class="form-label">選擇設計師風格</label>
+                  <select class="form-select" id="designerStyle" required>
+                    <option selected value="John">John</option>
+                    <option value="Ada">Ada</option>
+                    <option value="Allen">Allen</option>
+                    <option value="Sherry">Sherry</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    請輸入 住址
+                  </div>
+                </div>
+                <div class="mb-3 col-12">
+                  <label for="payment" class="form-label">付款方式</label>
+                  <select class="form-select" id="payment" required>
+                    <option selected value="貨到付款">貨到付款</option>
+                    <option value="線上付款">線上付款</option>
+                    <option value="轉帳付款">轉帳付款</option>
+                    <option value="分期付款">分期付款</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    請輸入 住址
+                  </div>
+                </div>
+                <!-- 加購服務 -->
+                <div class="mb-3 col-12">
+                  <p>加購服務</p>
+                    <input class="form-check-input" type="checkbox" value="cleanHouse" id="invalidCheck">
+                    <label class="form-check-label user-select-none" for="invalidCheck">
+                      無框畫+250
+                    </label>
+                    <div class="mx-4 d-inline">
+                      <input class="form-check-input" type="checkbox" value="massage" id="invalidCheck2">
+                      <label class="form-check-label user-select-none" for="invalidCheck2">
+                        送禮用包裝+199
+                      </label>
+                    </div>
+                    <div class="valid-feedback">
+                      Thank you!
+                    </div>
+                </div>
+                <div class="mb-3 col-12">
+                  <label for="remarkTextarea" class="form-label">備註說明</label>
+                  <textarea class="form-control" id="remarkTextarea" rows="3" required></textarea>
+                  <div class="valid-feedback">
+                    Thank you!
+                  </div>
+                </div>
+                <div class="text-center col-12 pb-4">
+                  <h4 class="py-3 text-center fw-bold">總金額 NT$ 300</h4>
+                  <button type="submit" class="btn btn-warning rounded-pill px-5 fs-4">送出訂購資訊</button>
+                </div>
+              </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="container">
+    <div class="row row-cols-1 row-cols-lg-2 g-0">
+      <div class="col d-flex justify-content-center pt-5">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col mb-4 text-center text-md-end">
+            <img class="img-fluid" src="./images/link01.png" alt="握手晃動樣">
+          </div>
+          <div class="col">
+            <div class="text-center text-md-start">
+              <h4>各機關合作廣告</h4>
+              <p class="text-nowrap">私人企業、各機構，毛小孩演出廣告!</p>
+              <a class="btn btn-outline-dark btn-h rounded-pill px-5" href="./index.html">聯絡我們</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col d-flex justify-content-center py-5">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col mb-4 text-center text-md-end">
+            <img class="img-fluid" src="./images/link02.png" alt="伸出手搔癢咖啡色小狗">
+          </div>
+          <div class="col">
+            <div class="text-center text-md-start">
+              <h4>贊助毛小孩溫飽</h4>
+              <p class="text-nowrap">我想幫助毛小孩，希望能盡一份心力 !</p>
+              <a class="btn btn-outline-dark btn-h rounded-pill px-5" href="./index.html">聯絡我們</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  <footer class="text-center bg-dark py-3" style="height: 64px;">
+    <small class="text-white">Copyright © 2022 波吉拯救毛孩行動.Bootstrap5 by ChungChi.</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="./javascripts/validate.js"></script>
+</body>
+</html>

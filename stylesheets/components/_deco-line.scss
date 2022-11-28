@@ -1,0 +1,19 @@
+.deco-line {
+  position: relative;
+  transition-duration:0.5s;
+  color: black;
+  &:hover {
+    padding-left: 35px;
+    color: $warning;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      bottom: 0;
+      width: 20px;
+      height: 4px;
+      background-color: $warning;
+    }
+  } 
+}

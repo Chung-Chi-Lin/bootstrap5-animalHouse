@@ -1,0 +1,9 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.f-kalam {
+  font-family: 'Kalam', cursive;
+    &-shadow {
+    text-shadow: 5px 0px 0px rgb(255, 255, 255);
+    }
+}
