@@ -17,3 +17,25 @@
     }
   } 
 }
+
+.deco-line-active {
+  position: relative;
+  transition-duration:0.5s;
+  padding-left: 35px;
+  color: $warning;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 4px;
+    background-color: $warning;
+  }
+}
+
+.a-none {
+  cursor:pointer;
+  pointer-events: none;
+}
