@@ -2,8 +2,17 @@ const All = document.getElementById('All');
 const Allen = document.getElementById('Allen');
 const Sherry = document.getElementById('Sherry');
 const John = document.getElementById('John');
+const decoLine = document.querySelector('.js-deco-line');
 
 const Imgs = document.getElementById('imgs');
+
+decoLine.addEventListener('click', function (e) {
+  // 先移除樣式
+  document.querySelector(".deco-line.deco-line-active").classList.remove("deco-line-active");
+  // 在新增樣式
+  console.log(e.target);
+  e.target.classList.add("deco-line-active");
+});
 
 All.addEventListener('click',()=>{
   Imgs.innerHTML=
